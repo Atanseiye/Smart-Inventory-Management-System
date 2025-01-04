@@ -76,7 +76,9 @@ def decisionMakingAgent(inventory_data, sales_data, budget):
                     'restock_cost': total_cost
                 })
     
-    return decisions
+    return decisions, combined_data.head()
 
-def actionAgent():
-    pass
+
+def action_agent(decisions):
+    for decision in decisions:
+        return f"Restocking {decision['restock_quantity']} units of {decision['product']}."

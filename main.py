@@ -6,7 +6,7 @@ except ModuleNotFoundError as e:
     print(f'{e} in the main.py')
 
 
-from agents import inputAgent, prepare_sales_data, modelAgent, predict_demand, actionAgent, decisionMakingAgent
+from agents import inputAgent, prepare_sales_data, modelAgent, predict_demand, decisionMakingAgent, action_agent
 
 data = inputAgent()
 sales_data_prep = prepare_sales_data(data['sales_data'])
@@ -18,6 +18,10 @@ model = modelAgent(sales_data=sales_data_prep)
 sales_predictions = predict_demand(model, data['sales_data'])
 
 decisionResult = decisionMakingAgent(data['inventory_data'], data['sales_data'], data['budget'])
+
+action = action_agent(decisionResult[0])
+# st.write(decisionResult[0])
+
 
 # print(decisionResult)
 
@@ -41,6 +45,9 @@ def dashboard_with_predictions(inventory, sales, decisions, priorityTable):
     st.subheader("Priority Table")
     prioritytable = pd.DataFrame(priorityTable)
     st.dataframe(prioritytable)
+
+    st.subheader('Action Taking')
+    st.write(action)
     
     # Visualizations
     st.subheader("Predicted Demand vs Current Stock")
