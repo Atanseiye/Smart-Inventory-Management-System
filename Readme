@@ -1,4 +1,4 @@
-### Project: Smart Inventory Management System
+# Project: Smart Inventory Management System
 
 Goal: Develop an agent that makes decisions about restocking inventory based on:
 
@@ -8,7 +8,7 @@ Goal: Develop an agent that makes decisions about restocking inventory based on:
     - Budget constraints.
 
 
-### Workflow
+# Workflow
 
     - Input Agent: Collects inventory, sales, and budget data.
     - Prediction Agent: Uses machine learning to forecast future demand.
