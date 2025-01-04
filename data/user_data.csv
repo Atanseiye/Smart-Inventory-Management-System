@@ -1,0 +1,5 @@
+name,email,interests,timezone,subscription_status,last_interaction_date,preferred_language,preferred_contact_time
+John Doe,john.doe@example.com,artificial intelligence,UTC+1,active,2024-12-15,English,morning
+Jane Smith,jane.smith@example.com,digital marketing,UTC-5,inactive,2024-11-10,English,afternoon
+Alex White,alex.white@example.com,"machine learning, trading",UTC+0,active,2024-12-05,English,evening
+Emma Brown,emma.brown@example.com,natural language processing,UTC+3,active,2024-12-20,English,morning

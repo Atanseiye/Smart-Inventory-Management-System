@@ -1,0 +1,19 @@
+### Project: Smart Inventory Management System
+
+Goal: Develop an agent that makes decisions about restocking inventory based on:
+
+    - Current stock levels.
+    - Sales trends.
+    - Predicted demand.
+    - Budget constraints.
+
+
+### Workflow
+
+    - Input Agent: Collects inventory, sales, and budget data.
+    - Prediction Agent: Uses machine learning to forecast future demand.
+    - Decision-Making Agent: Decides when and how much to restock based on:
+        Stock levels.
+        Forecasted demand.
+        Available budget.
+    - Action Agent: Executes the decision (e.g., sends a restocking request or alerts).
